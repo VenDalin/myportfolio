@@ -78,7 +78,7 @@ window.addEventListener('scroll', () => {
     }
 
     // Update active nav link based on scroll position
-    const sections = document.querySelectorAll('section[id]');
+    const sections = [...document.querySelectorAll('section[id]'), document.getElementById('footer')];
     const navLinks = document.querySelectorAll('.nav-link');
     
     let current = '';
